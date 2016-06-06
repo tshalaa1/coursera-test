@@ -3,26 +3,47 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
+
 h1 {
   margin-bottom: 30px;
+  margin-top: 30px;
   font-size: 175%;
   text-align: center;
-  font-family: Arial, sans-serif;
+  color: #FFFF;
 }
 
 .row {
   width: 100%;
+  float: left;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+section {
+	background-color: #FFF5BA;
+	position: relative;
+	border: 1px solid black;
+	margin-bottom: 10px;
+}
+
+section > div {
+	font-family: Arial, sans-serif;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.content {
+	padding: 10px;
+}
+
 /********** Desktop **********/
 @media (min-width: 992px) {
-	
 	.col-dt-1, .col-dt-2, .col-dt-3 {
 		float: left;
-		border: 1px solid black;
 	}
 	.col-dt-1 {
 		width: 33.33%;
@@ -33,15 +54,12 @@ h1 {
     .col-dt-3 {
 		width: 33.33%;
     }
-	
 }
 
 /********** Tablet **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	
 	.col-tb-1, .col-tb-2, .col-tb-3 {
-		float: left;
-		border: 1px solid black;
+		float: left;	
 	}
 	.col-tb-1 {
 		width: 50%;
@@ -52,15 +70,12 @@ h1 {
     .col-tb-3 {
 		width: 100%;
     }
-	
 }
 
 /********** Mobile **********/
 @media (max-width: 767px) {
-	
 	.col-mb-1, .col-mb-2, .col-mb-3 {
-		float: left;
-		border: 1px solid black;
+		float: left;	
 	}
 	.col-mb-1 {
 		width: 100%;
@@ -71,47 +86,28 @@ h1 {
     .col-mb-3 {
 		width: 100%;
     }
-	
-}
-section {
-	background-color: gray;
-	position: relative;
-	margin-bottom: 10px;
-	
-}
-section > div {
-	font-family: Arial, sans-serif;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-top: 40px;
 }
 
 p {
-  font-family: Arial, sans-serif;
   font-size: 125%;
+  color: #FFD700;
   width: 80px;
   height: 30px;
   text-align: center;
   border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #t1 {
   background-color: #5F9EA0;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 #t2 {
   background-color: #A52A2A;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 #t3 {
-  background-color: #DEB887;
-  position: absolute;
-  top: 0;
-  right: 0;
+  background-color: green;
 }
